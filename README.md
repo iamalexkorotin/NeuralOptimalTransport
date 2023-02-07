@@ -20,7 +20,7 @@ The repository contains reproducible `PyTorch` source code for computing **optim
 - Vector \*.svg [sources](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/pics/NOT_figures.svg) of the figures in the paper (use [inkscape](https://inkscape.org/) to edit);
 
 ## Related repositories
-- [Repository](https://github.com/iamalexkorotin/KernelNeuralOptimalTransport) for [Kernel Neural Optimal Transport](https://arxiv.org/abs/2205.15269) paper (ICLR 2023).
+- Repository for [Kernel Neural Optimal Transport](https://arxiv.org/abs/2205.15269) paper (ICLR 2023).
 - [Repository](https://github.com/justkolesov/Wasserstein1Benchmark) for [Kantorovich Strikes Back! Wasserstein GANs are not Optimal Transport?](https://arxiv.org/abs/2206.07767) paper (NeurIPS 2022).
 - [Repository](https://github.com/iamalexkorotin/WassersteinIterativeNetworks) for [Wasserstein Iterative Networks for Barycenter Estimation](https://arxiv.org/abs/2201.12245) paper (NeurIPS 2022).
 - [Repository](https://github.com/iamalexkorotin/Wasserstein2Benchmark) for [Do Neural Optimal Transport Solvers Work? A Continuous Wasserstein-2 Benchmark](https://arxiv.org/abs/2106.01954) paper (NeurIPS 2021).
