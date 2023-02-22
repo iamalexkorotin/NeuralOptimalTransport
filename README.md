@@ -20,7 +20,7 @@ The repository contains reproducible `PyTorch` source code for computing **optim
 - Vector \*.svg [sources](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/pics/NOT_figures.svg) of the figures in the paper (use [inkscape](https://inkscape.org/) to edit);
 
 ## Related repositories
-- Repository for [Kernel Neural Optimal Transport](https://arxiv.org/abs/2205.15269) paper (ICLR 2023).
+- [Repository](https://github.com/iamalexkorotin/KernelNeuralOptimalTransport) for [Kernel Neural Optimal Transport](https://arxiv.org/abs/2205.15269) paper (ICLR 2023).
 - [Repository](https://github.com/justkolesov/Wasserstein1Benchmark) for [Kantorovich Strikes Back! Wasserstein GANs are not Optimal Transport?](https://arxiv.org/abs/2206.07767) paper (NeurIPS 2022).
 - [Repository](https://github.com/iamalexkorotin/WassersteinIterativeNetworks) for [Wasserstein Iterative Networks for Barycenter Estimation](https://arxiv.org/abs/2201.12245) paper (NeurIPS 2022).
 - [Repository](https://github.com/iamalexkorotin/Wasserstein2Benchmark) for [Do Neural Optimal Transport Solvers Work? A Continuous Wasserstein-2 Benchmark](https://arxiv.org/abs/2106.01954) paper (NeurIPS 2021).
@@ -42,7 +42,7 @@ The unpaired domain translation task can be posed as an OT problem. Our NOT algo
 <p align="center"><img src="pics/ust.png" width="550" /></p>
 
 Compared to the popular image-to-image translation models based on GANs or diffusion models, our method provides the following key advantages
-- **[controlable](https://github.com/iamalexkorotin/NeuralOptimalTransport#constrolling-the-diversity) amount of diversity** in generated samples (**without** any duct tape or heuristics); 
+- **controlable amount of diversity** in generated samples (**without** any duct tape or heuristics); 
 - **better interpretability** of the learned map.
 
 Qualitative examples are shown below for various pairs of datasets (at resolutions $128\times 128$ and $64\times 64$).
