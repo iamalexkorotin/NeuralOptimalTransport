@@ -16,7 +16,7 @@ The repository contains reproducible `PyTorch` source code for computing **optim
 
 ## Seminars and Materials
 - [Seminar](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/seminars/NOT_seminar_strong.ipynb) and [solutions](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/seminars/NOT_seminar_strong_solutions.ipynb) on NOT with **strong** costs;
-- Seminar and solutions on NOT with **weak** costs (TO DO);
+- [Seminar](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/seminars/NOT_seminar_weak.ipynb) and [solutions](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/seminars/NOT_seminar_weak_solutions.ipynb) on NOT with **weak** costs;
 - Vector \*.svg [sources](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/pics/NOT_figures.svg) of the figures in the paper (use [inkscape](https://inkscape.org/) to edit);
 
 ## Related repositories
