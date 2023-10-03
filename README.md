@@ -6,6 +6,8 @@ The repository contains reproducible `PyTorch` source code for computing **optim
 <p align="center"><img src="pics/stochastic_OT_map.png" width="400" /></p>
 
 ## Presentations
+- Long talk (Part [1](https://www.youtube.com/watch?v=mBEx46WnD80), [2](https://www.youtube.com/watch?v=r214pzFTZLo)) by Alex Korotin at [AIRI Summer School 2023](https://iclr.cc/Conferences/2023) (July 2023, RU)
+- [Talk](https://iclr.cc/virtual/2023/poster/11993) by Alex Korotin at [ICLR 2023](https://iclr.cc/Conferences/2023) (May 2023, EN)
 - [Talk](https://www.youtube.com/watch?v=djLNOnncqRY) by Evgeny Burnaev at [Scientific AI seminar](https://www.youtube.com/@aiseminars) (March 2023, RU)
 - [Short Talk](https://www.youtube.com/watch?v=w2ufVBoPH5E&t=1476s) by Evgeny Burnaev at [Fall into ML school](https://cs.hse.ru/ml2022/) (02 November 2022, RU);
 - [Talk](https://www.youtube.com/live/mPpt4qBMIj4) by Alexander Korotin at [Seminar of "AI in Industry" association](https://csr-nw.ru/news/detail.php?ID=1941) (13 October 2022, RU);
