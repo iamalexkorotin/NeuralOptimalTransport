@@ -43,7 +43,7 @@ The unpaired domain translation task can be posed as an OT problem. Our NOT algo
 <p align="center"><img src="pics/ust.png" width="550" /></p>
 
 Compared to the popular image-to-image translation models based on GANs or diffusion models, our method provides the following key advantages
-- **controlable amount of diversity** in generated samples (**without** any duct tape or heuristics); 
+- **controlable amount of diversity** in generated samples (**without** any duct tape or heuristics);
 - **better interpretability** of the learned map.
 
 Qualitative examples are shown below for various pairs of datasets (at resolutions $128\times 128$ and $64\times 64$).
@@ -63,7 +63,7 @@ Our method offers a single parameter $\gamma\in[0,+\infty)$ in the weak quadrati
 ## Repository structure
 The implementation is GPU-based with the multi-GPU support. Tested with `torch== 1.9.0` and 1-4 Tesla V100.
 
-All the experiments are issued in the form of pretty self-explanatory jupyter notebooks (`notebooks/`). For convenience, the majority of the evaluation output is preserved. Auxilary source code is moved to `.py` modules (`src/`). 
+All the experiments are issued in the form of pretty self-explanatory jupyter notebooks (`notebooks/`). For convenience, the majority of the evaluation output is preserved. Auxilary source code is moved to `.py` modules (`src/`).
 - ```notebooks/NOT_toy_1D.ipynb``` - toy experiments in 1D (weak costs);
 - ```notebooks/NOT_toy_2D.ipynb``` - toy experiments in 2D (weak costs);
 - ```notebooks/NOT_training_strong.ipynb``` - unpaired image-to-image translation (**one-to-one**, strong costs);
@@ -77,6 +77,16 @@ All the experiments are issued in the form of pretty self-explanatory jupyter no
 - Handbags, shoes, churches, outdoor [datasets](https://github.com/junyanz/iGAN/blob/master/train_dcgan/README.md);
 
 The dataloaders can be created by ```load_dataset``` function from ```src/tools.py```. The latter four datasets get loaded directly to RAM.
+
+## Setup
+
+To run the notebooks, it is recommended to create a virtual environment using either [`conda`](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) or [`venv`](https://docs.python.org/3/library/venv.html). Once the virtual environment is set up, install the required dependencies by running the following command:
+
+```console
+pip install -r requirements.txt
+```
+
+Finally, make sure to install `torch` and `torchvision`. It is advisable to install these packages based on your system and `CUDA` version. Please refer to the [official website](https://pytorch.org) for detailed installation instructions.
 
 ## Credits
 - [Weights & Biases](https://wandb.ai) developer tools for machine learning;
