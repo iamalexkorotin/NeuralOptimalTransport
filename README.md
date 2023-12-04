@@ -5,7 +5,28 @@ The repository contains reproducible `PyTorch` source code for computing **optim
 
 <p align="center"><img src="pics/stochastic_OT_map.png" width="400" /></p>
 
-## Seminars and Materials
+## Repository structure
+The implementation is GPU-based with the multi-GPU support. Tested with `torch== 1.9.0` and 1-4 Tesla V100.
+
+All the experiments are issued in the form of pretty self-explanatory jupyter notebooks (`notebooks/`). For convenience, the majority of the evaluation output is preserved. Auxilary source code is moved to `.py` modules (`src/`).
+- ```notebooks/NOT_toy_1D.ipynb``` - toy experiments in 1D (weak costs);
+- ```notebooks/NOT_toy_2D.ipynb``` - toy experiments in 2D (weak costs);
+- ```notebooks/NOT_training_strong.ipynb``` - unpaired image-to-image translation (**one-to-one**, strong costs);
+- ```notebooks/NOT_training_weak.ipynb``` - unpaired image-to-image translation (**one-to-many**, weak costs);
+- ```notebooks/NOT_plots.ipynb``` - plotting the translation results ([pre-trained models](https://disk.yandex.ru/d/YK7V6qoUt9x1iA) are needed);
+- ```stats/compute_stats.ipynb``` - pre-compute [InceptionV3](https://en.wikipedia.org/wiki/Inceptionv3) statistics to speed up test [FID](https://arxiv.org/abs/1706.08500) computation;
+
+## Setup
+
+To run the notebooks, it is recommended to create a virtual environment using either [`conda`](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) or [`venv`](https://docs.python.org/3/library/venv.html). Once the virtual environment is set up, install the required dependencies by running the following command:
+
+```console
+pip install -r requirements.txt
+```
+
+Finally, make sure to install `torch` and `torchvision`. It is advisable to install these packages based on your system and `CUDA` version. Please refer to the [official website](https://pytorch.org) for detailed installation instructions.
+
+## Educational Materials
 - [Seminar](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/seminars/NOT_seminar_strong.ipynb) and [solutions](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/seminars/NOT_seminar_strong_solutions.ipynb) on NOT with **strong** costs;
 - [Seminar](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/seminars/NOT_seminar_weak.ipynb) and [solutions](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/seminars/NOT_seminar_weak_solutions.ipynb) on NOT with **weak** costs;
 - Vector \*.svg [sources](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/pics/NOT_figures.svg) of the figures in the paper (use [inkscape](https://inkscape.org/) to edit);
@@ -44,33 +65,12 @@ We show unpaired translition with NOT with the $\gamma$-weak quadratic cost on *
 Our method offers a single parameter $\gamma\in[0,+\infty)$ in the weak quadratic cost to control the amount of diversity.
 <p align="center"><img src="pics/diversity.png" width="750" /></p>
 
-## Repository structure
-The implementation is GPU-based with the multi-GPU support. Tested with `torch== 1.9.0` and 1-4 Tesla V100.
-
-All the experiments are issued in the form of pretty self-explanatory jupyter notebooks (`notebooks/`). For convenience, the majority of the evaluation output is preserved. Auxilary source code is moved to `.py` modules (`src/`).
-- ```notebooks/NOT_toy_1D.ipynb``` - toy experiments in 1D (weak costs);
-- ```notebooks/NOT_toy_2D.ipynb``` - toy experiments in 2D (weak costs);
-- ```notebooks/NOT_training_strong.ipynb``` - unpaired image-to-image translation (**one-to-one**, strong costs);
-- ```notebooks/NOT_training_weak.ipynb``` - unpaired image-to-image translation (**one-to-many**, weak costs);
-- ```notebooks/NOT_plots.ipynb``` - plotting the translation results ([pre-trained models](https://disk.yandex.ru/d/YK7V6qoUt9x1iA) are needed);
-- ```stats/compute_stats.ipynb``` - pre-compute [InceptionV3](https://en.wikipedia.org/wiki/Inceptionv3) statistics to speed up test [FID](https://arxiv.org/abs/1706.08500) computation;
-
 ## Datasets
 - [Aligned anime faces](https://www.kaggle.com/datasets/reitanaka/alignedanimefaces) (105GB) should be pre-processed with ```datasets/preprocess.ipynb```;
 - [CelebA faces](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) requires ```datasets/list_attr_celeba.ipynb```;
 - Handbags, shoes, churches, outdoor [datasets](https://github.com/junyanz/iGAN/blob/master/train_dcgan/README.md);
 
 The dataloaders can be created by ```load_dataset``` function from ```src/tools.py```. The latter four datasets get loaded directly to RAM.
-
-## Setup
-
-To run the notebooks, it is recommended to create a virtual environment using either [`conda`](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) or [`venv`](https://docs.python.org/3/library/venv.html). Once the virtual environment is set up, install the required dependencies by running the following command:
-
-```console
-pip install -r requirements.txt
-```
-
-Finally, make sure to install `torch` and `torchvision`. It is advisable to install these packages based on your system and `CUDA` version. Please refer to the [official website](https://pytorch.org) for detailed installation instructions.
 
 ## Presentations
 - Long talk (Part [1](https://www.youtube.com/watch?v=GEpUoqpBul8&feature=youtu.be), [2](https://youtu.be/3QysEOdnDds)) by Alex Korotin at AI in Industry Seminar at [CS MSU]([https://iclr.cc/Conferences/2023](https://cs.msu.ru/)) (November 2023, RU)
