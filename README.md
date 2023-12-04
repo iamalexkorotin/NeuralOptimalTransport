@@ -5,28 +5,10 @@ The repository contains reproducible `PyTorch` source code for computing **optim
 
 <p align="center"><img src="pics/stochastic_OT_map.png" width="400" /></p>
 
-## Presentations
-- Long talk (Part [1](https://www.youtube.com/watch?v=mBEx46WnD80), [2](https://www.youtube.com/watch?v=r214pzFTZLo)) by Alex Korotin at [AIRI Summer School 2023](https://iclr.cc/Conferences/2023) (July 2023, RU)
-- [Talk](https://iclr.cc/virtual/2023/poster/11993) by Alex Korotin at [ICLR 2023](https://iclr.cc/Conferences/2023) (May 2023, EN)
-- [Talk](https://www.youtube.com/watch?v=djLNOnncqRY) by Evgeny Burnaev at [Scientific AI seminar](https://www.youtube.com/@aiseminars) (March 2023, RU)
-- [Short Talk](https://www.youtube.com/watch?v=w2ufVBoPH5E&t=1476s) by Evgeny Burnaev at [Fall into ML school](https://cs.hse.ru/ml2022/) (02 November 2022, RU);
-- [Talk](https://www.youtube.com/live/mPpt4qBMIj4) by Alexander Korotin at [Seminar of "AI in Industry" association](https://csr-nw.ru/news/detail.php?ID=1941) (13 October 2022, RU);
-- [Talk](https://www.youtube.com/watch?v=uxO4JQO3bE8) by Alexander Korotin at [AIRI conference on AI 2022](https://csr-nw.ru/news/detail.php?ID=1941) (21 July 2022, RU);
-- [Talk](https://www.youtube.com/watch?v=tMfn_Tbcakc) by Alexander Korotin at [TII seminar](https://www.tii.ae/seminar/aidrc-seminar-series-alexander-korotin) (09 Aug 2022, EN);
-- [Talk](https://www.youtube.com/watch?v=OfDDaW7-N2I) by Alexander Korotin at [BayesGroup research seminar](https://bayesgroup.ru/teaching/research-seminar-on-bayesian-methods-in-machine-learning/) (20 May 2022, RU, [slides](https://drive.google.com/file/d/1ce-Ge7IaA3_K5DVwa5cRbdxO9yFMBvh1/view?usp=sharing));
-- [Short Talk](https://vk.com/video-70630039_456239270?t=1500s) by Alexander Korotin at [Data Fusion 2022 Conference](https://data-fusion.ru/data-fusion-2022/) (15 April 2022, RU);
-- Talk by Alexander Korotin at LEStart Seminar at [Skoltech](https://www.skoltech.ru/en/) (24 February 2022, RU);
-
 ## Seminars and Materials
 - [Seminar](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/seminars/NOT_seminar_strong.ipynb) and [solutions](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/seminars/NOT_seminar_strong_solutions.ipynb) on NOT with **strong** costs;
 - [Seminar](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/seminars/NOT_seminar_weak.ipynb) and [solutions](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/seminars/NOT_seminar_weak_solutions.ipynb) on NOT with **weak** costs;
 - Vector \*.svg [sources](https://github.com/iamalexkorotin/NeuralOptimalTransport/blob/main/pics/NOT_figures.svg) of the figures in the paper (use [inkscape](https://inkscape.org/) to edit);
-
-## Related repositories
-- [Repository](https://github.com/iamalexkorotin/KernelNeuralOptimalTransport) for [Kernel Neural Optimal Transport](https://arxiv.org/abs/2205.15269) paper (ICLR 2023).
-- [Repository](https://github.com/justkolesov/Wasserstein1Benchmark) for [Kantorovich Strikes Back! Wasserstein GANs are not Optimal Transport?](https://arxiv.org/abs/2206.07767) paper (NeurIPS 2022).
-- [Repository](https://github.com/iamalexkorotin/WassersteinIterativeNetworks) for [Wasserstein Iterative Networks for Barycenter Estimation](https://arxiv.org/abs/2201.12245) paper (NeurIPS 2022).
-- [Repository](https://github.com/iamalexkorotin/Wasserstein2Benchmark) for [Do Neural Optimal Transport Solvers Work? A Continuous Wasserstein-2 Benchmark](https://arxiv.org/abs/2106.01954) paper (NeurIPS 2021).
 
 ## Citation
 ```
@@ -89,6 +71,28 @@ pip install -r requirements.txt
 ```
 
 Finally, make sure to install `torch` and `torchvision`. It is advisable to install these packages based on your system and `CUDA` version. Please refer to the [official website](https://pytorch.org) for detailed installation instructions.
+
+## Presentations
+- Long talk (Part [1](https://www.youtube.com/watch?v=GEpUoqpBul8&feature=youtu.be), [2](https://youtu.be/3QysEOdnDds)) by Alex Korotin at AI in Industry Seminar at [CS MSU]([https://iclr.cc/Conferences/2023](https://cs.msu.ru/)) (November 2023, RU)
+- Long talk by Alex Korotin at Math in ML Seminar at Skoltech (November 2023, RU)
+- Short talk by Alex Korotin at [DataStart 2023](https://datastart.ru/) (November 2023, RU)
+- Short Talk by Alex Korotin at [FallML 2023](https://cs.hse.ru/ml2023/)  (November 2023, EN)
+- Long talk (Part [1](https://www.youtube.com/watch?v=mBEx46WnD80), [2](https://www.youtube.com/watch?v=r214pzFTZLo)) by Alex Korotin at [AIRI Summer School 2023](https://iclr.cc/Conferences/2023) (July 2023, RU)
+- [Talk](https://iclr.cc/virtual/2023/poster/11993) by Alex Korotin at [ICLR 2023](https://iclr.cc/Conferences/2023) (May 2023, EN)
+- [Talk](https://www.youtube.com/watch?v=djLNOnncqRY) by Evgeny Burnaev at [Scientific AI seminar](https://www.youtube.com/@aiseminars) (March 2023, RU)
+- [Short Talk](https://www.youtube.com/watch?v=w2ufVBoPH5E&t=1476s) by Evgeny Burnaev at [Fall into ML school](https://cs.hse.ru/ml2022/) (02 November 2022, RU);
+- [Talk](https://www.youtube.com/live/mPpt4qBMIj4) by Alexander Korotin at [Seminar of "AI in Industry" association](https://csr-nw.ru/news/detail.php?ID=1941) (13 October 2022, RU);
+- [Talk](https://www.youtube.com/watch?v=uxO4JQO3bE8) by Alexander Korotin at [AIRI conference on AI 2022](https://csr-nw.ru/news/detail.php?ID=1941) (21 July 2022, RU);
+- [Talk](https://www.youtube.com/watch?v=tMfn_Tbcakc) by Alexander Korotin at [TII seminar](https://www.tii.ae/seminar/aidrc-seminar-series-alexander-korotin) (09 Aug 2022, EN);
+- [Talk](https://www.youtube.com/watch?v=OfDDaW7-N2I) by Alexander Korotin at [BayesGroup research seminar](https://bayesgroup.ru/teaching/research-seminar-on-bayesian-methods-in-machine-learning/) (20 May 2022, RU, [slides](https://drive.google.com/file/d/1ce-Ge7IaA3_K5DVwa5cRbdxO9yFMBvh1/view?usp=sharing));
+- [Short Talk](https://vk.com/video-70630039_456239270?t=1500s) by Alexander Korotin at [Data Fusion 2022 Conference](https://data-fusion.ru/data-fusion-2022/) (15 April 2022, RU);
+- Talk by Alexander Korotin at LEStart Seminar at [Skoltech](https://www.skoltech.ru/en/) (24 February 2022, RU);
+
+## Related repositories
+- [Repository](https://github.com/iamalexkorotin/KernelNeuralOptimalTransport) for [Kernel Neural Optimal Transport](https://arxiv.org/abs/2205.15269) paper (ICLR 2023).
+- [Repository](https://github.com/justkolesov/Wasserstein1Benchmark) for [Kantorovich Strikes Back! Wasserstein GANs are not Optimal Transport?](https://arxiv.org/abs/2206.07767) paper (NeurIPS 2022).
+- [Repository](https://github.com/iamalexkorotin/WassersteinIterativeNetworks) for [Wasserstein Iterative Networks for Barycenter Estimation](https://arxiv.org/abs/2201.12245) paper (NeurIPS 2022).
+- [Repository](https://github.com/iamalexkorotin/Wasserstein2Benchmark) for [Do Neural Optimal Transport Solvers Work? A Continuous Wasserstein-2 Benchmark](https://arxiv.org/abs/2106.01954) paper (NeurIPS 2021).
 
 ## Credits
 - [Weights & Biases](https://wandb.ai) developer tools for machine learning;
