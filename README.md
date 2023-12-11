@@ -74,9 +74,10 @@ The dataloaders can be created by ```load_dataset``` function from ```src/tools.
 
 ## Presentations
 - Long talk (Part [1](https://www.youtube.com/watch?v=GEpUoqpBul8&feature=youtu.be), [2](https://youtu.be/3QysEOdnDds)) by Alex Korotin at AI in Industry Seminar at [CS MSU]([https://iclr.cc/Conferences/2023](https://cs.msu.ru/)) (November 2023, RU)
-- Long talk by Alex Korotin at Math in ML Seminar at Skoltech (November 2023, RU)
+- [Long talk](https://youtu.be/MRFELIqCz9M?t=2929) by Alex Korotin at Math in ML Seminar at Skoltech (November 2023, RU)
 - Short talk by Alex Korotin at [DataStart 2023](https://datastart.ru/) (November 2023, RU)
-- Short Talk by Alex Korotin at [FallML 2023](https://cs.hse.ru/ml2023/)  (November 2023, EN)
+- [Short Talk](https://youtu.be/qe6xxURilw4?t=1043) by Alex Korotin at [FallML 2023](https://cs.hse.ru/ml2023/)  (November 2023, EN)
+- Long talk (Part [1](https://youtu.be/LKtsmeCEaHg), [2](https://youtu.be/HIUoiftkhxQ)) by Alex Korotin at [Skoltech ML Summer School 2023](https://smiles.skoltech.ru/school-2023-en) (August 2023, RU)
 - Long talk (Part [1](https://www.youtube.com/watch?v=mBEx46WnD80), [2](https://www.youtube.com/watch?v=r214pzFTZLo)) by Alex Korotin at [AIRI Summer School 2023](https://iclr.cc/Conferences/2023) (July 2023, RU)
 - [Talk](https://iclr.cc/virtual/2023/poster/11993) by Alex Korotin at [ICLR 2023](https://iclr.cc/Conferences/2023) (May 2023, EN)
 - [Talk](https://www.youtube.com/watch?v=djLNOnncqRY) by Evgeny Burnaev at [Scientific AI seminar](https://www.youtube.com/@aiseminars) (March 2023, RU)
